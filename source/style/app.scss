@@ -1,0 +1,24 @@
+// переменные
+$color_page_about_1: #f2f0e8; // цвет левой колонки
+$color_page_about_2: #f4f5f0; // цвет правой колонки
+$color_page_about_3: #474b57; // цвет текста
+
+// GENERAL
+body,h1,h2,h3,h4,h5,h6,p,ul,li {
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+.wrapper{
+  position: relative;
+}
+
+@import 'mixins/mixins';
+@import 'common/section.main';
+@import 'common/section.author';
+@import 'common/section.about';
+@import 'common/section.map';
+@import 'common/section.works';
+@import 'common/section.reviews';

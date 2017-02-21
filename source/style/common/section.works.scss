@@ -1,0 +1,17 @@
+.l-works{
+  height: 750px;
+  color: $color_page_about_3;
+  @include clearfix ;
+}
+.l-works__col-left, .l-works__col-right{
+  @include col_position;
+}
+.l-works__col-left{
+  background-color: $color_page_about_1;
+}
+.l-works__col-right{
+  background-color: $color_page_about_2;
+}
+.c-works{
+  @include centred;
+}

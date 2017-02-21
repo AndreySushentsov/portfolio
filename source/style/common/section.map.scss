@@ -1,0 +1,21 @@
+.l-map{
+  height: 930px;
+  position: relative;
+  color: $color_page_about_3;
+}
+.c-contacts{
+  @include centred;
+  height: 280px;
+  width: 570px;
+  background-color: gray;
+}
+.c-contacts__header{
+  @include headers;
+}
+.c-contacts__icon{
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #004ecb;
+}

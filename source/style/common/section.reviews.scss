@@ -1,0 +1,39 @@
+.l-reviews{
+  position: relative;
+  background: url('/assets/img/lighthouse_bg.png') no-repeat center;
+  height: 800px;
+}
+.c-review-contact{
+  @include centred;
+  height: 455px;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.c-review-contact__title{
+  @include headers;
+  color: white;
+  margin-top: 45px;
+}
+.c-review-contact__form{
+  margin: 0 15px;
+}
+.c-review-contact__input, .c-review-contact__textarea{
+  margin: 10px 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  height: 45px;
+}
+.c-review-contact__textarea{
+  height: 130px;
+}
+.c-review-contact__submit, .c-review-contact__submit-reset{
+  @include col_position;
+  height: 45px;
+  border: none;
+  bottom: 0;
+}
+.c-review-contact__submit{
+  background-color: #004cd1;
+  color: white;
+}

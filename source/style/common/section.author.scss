@@ -1,0 +1,45 @@
+.l-author{
+  position: relative;
+  min-height: 620px;
+  width: 100%;
+  background: url('/assets/img/main_page_bg.png') no-repeat center;
+}
+.c-social{
+  position: absolute;
+}
+
+// классы для центрального длока с фото
+.c-card{
+  @include centred();
+  color: white;
+  text-align: center;
+}
+.c-card__author-img{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color:#162c59;
+  margin: 0 auto;
+}
+.c-card__author-img img{
+  height: 100%
+}
+.c-card__name{
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+}
+
+//классы для треугольников
+.c-triangles{
+  @include clearfix;
+}
+.c-triangle-left{
+  @include triangle_position;
+  fill:$color_page_about_1;
+}
+.c-triangle-right{
+  @include triangle_position;
+  right: 0;
+  fill:$color_page_about_2;
+}

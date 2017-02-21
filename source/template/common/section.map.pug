@@ -1,0 +1,9 @@
+section.l-map
+  .c-contacts
+    h3.c-contacts__header Контакты
+    ul.c-contacts__social
+      -var contacts = ['phone','skipe','e-mail','location']
+      each contact in contacts
+        li.c-contacts__social-item
+          a(href='#').c-contacts__icon=contact
+          p.c-contacts__contacts

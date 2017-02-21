@@ -1,0 +1,32 @@
+section.l-about
+  .l-about__col-left
+    h2.c-about__title Обо мне
+    img.c-about__img
+    h3.c-about__header Кто я
+    p.c-about__descr Lorem ipsum dolor sit amet, consectetur adipisicing 
+     | elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+     | aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+     |laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+     |dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+     |fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+     |sunt in culpa qui officia deserunt mollit anim id est laborum.
+  .l-about__col-right
+    h2.c-about__header Чем я могу быть вам полезен
+    p.c-about__descr-skils Lorem ipsum dolor sit amet, consectetur adipisicing 
+     | elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+     | aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+  
+
+    ul.c-about__skils
+     -var skils_category = ['Frontend','Backend','WorkFlow']
+      each skil in skils_category
+        li.c-about__skils-item
+          h3.c-about__skils-header= skil
+          ul.c-about__progress
+            -var skils_items = ['1','2','3','4']
+            each item in skils_items
+              li.c-about__progress-item
+                svg(width="110" height="110").circles
+                  circle(r="35" cx="50%" cy="50%").circle__first
+                  circle(r="35" cx="50%" cy="50%").circle__second
+              
