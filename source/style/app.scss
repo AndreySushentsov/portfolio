@@ -12,10 +12,13 @@ li{
   list-style-type: none;
 }
 .wrapper{
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
 @import 'mixins/mixins';
+@import 'common/_author.card';
 @import 'common/section.main';
 @import 'common/section.author';
 @import 'common/section.about';

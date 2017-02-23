@@ -1,0 +1,22 @@
+// классы для центрального длока с фото
+.c-card{
+  @include centred();
+  color: white;
+  text-align: center;
+
+}
+.c-card__author-img{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color:#162c59;
+  margin: 0 auto;
+}
+.c-card__author-img img{
+  height: 100%
+}
+.c-card__name{
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+}

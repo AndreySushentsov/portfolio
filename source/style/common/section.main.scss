@@ -1,14 +1,11 @@
 .l-main{
   min-height: 700px;
   height: 100%;
+  width: 100%;
   background: url('/assets/img/main_page_bg.png') no-repeat center;
 }
-.l-developer{
-  @include centred;
-  height: 400px;
-  width: 370px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
+
+//кнопка "авторизаваться"
 .l-authorize{
   float: right;
   margin: 22px;
@@ -18,5 +15,52 @@
   text-decoration: none;
   &:hover{
     background-color: rgba(255, 255, 255, 0.5);
+  }
+  @include mobile{
+    display: flex;;
+    float: none;
+    justify-content: center;
+  }
+}
+
+// центральный блок
+.l-developer{
+  @include centred;
+  height: 400px;
+  width: 370px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @include mobile{
+    width: 95%;
+  }
+}
+
+// кнопки "Мои работы" "Обо мне" "Блог"
+.c-buttons__group{
+  display: flex;
+}
+.c-buttons__item{
+  flex: 1;
+  height: 45px;
+  border-right: 2px solid #7296d3;
+  &:last-child{
+    border:none;
+  }
+}
+.c-buttons__anchor{
+  justify-content: center;
+  align-items: center;
+  display: flex;;
+  width: 100%;
+  height: 100%;
+  background-color: #0548be;
+  text-decoration: none;
+  color: white;
+
+  &:hover{
+    background-color: #083c97;
   }
 }

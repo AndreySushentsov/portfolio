@@ -6,4 +6,10 @@
         img(src='../assets/img/my_photo.png') 
       h2.c-card__name Sushentsov Andrey
       p.c-card__descr Web_development
-    
+       
+    .c-buttons
+      ul.c-buttons__group
+        -var button_group = ['Мои работы','Обо мне','Блог']    
+          each item in button_group
+            li.c-buttons__item
+              a(href='#').c-buttons__anchor=item
